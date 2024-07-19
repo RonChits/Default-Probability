@@ -8,12 +8,12 @@ Problem statement: Financial institutions face significant risks due to loan def
 
 ## Data
   - Data cleaning,
-    1. Currency has been cleaned as data entry may have caused the currency to appear as 2 currencies are being offered as loans but only the difference has been inserting a $ before USD , leading to biased intepretation as two currencies.
-    2. Marital status showed a bit of missing info where i replaced empty data points with "other" so that will no problems with representing those who didnt disclose their status but still we need a representation even the problem was on data entry, the models need full representation of information.
+    1. Currency has been cleaned as data entry may have caused the currency to appear as 2 currencies being offered as loans, but only the difference has been insertion of a $ sign before USD , leading to biased intepretation as two currencies.
+    2. Marital status showed a bit of missing information where replacement of empty data points with "other", so that no problems with representing those who didn't disclose their status but still the models need a representation even the problem was on data entry, the models need full representation of information.
     3. Date changed to datetime for full presentation and exploratory reasons.
-    4. Remaining term of the loan i set it upto to 80 if it exceeds this value i considered it an outlier , though the term was not mentioned are they years or months.
-    5. Considering outliers on other numerical features i only took the values between first 1% and last 1% on all features as this threshold removed extreme values , and this leads to use of tree based models to addres this potential for overfitting.
-    6. Dropped any null entry , done so to avoid insertion of dummies unecessarily as they where few as well comparing to the dataframe.
+    4. Remaining term of the loan set upto to 80, if it exceeds this value it is considered an outlier, though the term was not mentioned that they are years or months.
+    5. Considering outliers on other numerical features, the values between first 1% and last 1% on all features are removed as extreme values, and this leads to use of tree based models to address this as a potential to overfitting.
+    6. Dropped any null entry , done so to avoid insertion of dummies unecessarily as they are few as well comparing to the dataframe.
   - Preprocessing,
     1. Use of LabelEncoder, on gender so that the feature will have full representation on probability of applicant.
     2. Use of OneHotEncoder, on Loan Status so that the target feature will be readable and model will only train with numerical values.
@@ -51,8 +51,8 @@ Problem statement: Financial institutions face significant risks due to loan def
 - Gokwe----------901
 
 ## Methodology
-* Data analysis
-  The method used for this problem was supervised learning labeling my features that my machine will learn on structured data to classify entries accordingly.
+* Data analysis.
+  The approach used for this problem is "supervised learning", labeling features that machine will learn on structured data to classify entries accordingly.
   
 * Historical Loan applicants information.
   
@@ -142,5 +142,3 @@ Problem statement: Financial institutions face significant risks due to loan def
   
   **2. Bayesian Optimization**:Bayesian optimization techniques, like Hyperopt or Optuna, intelligently explore the hyperparameter space, focusing on areas that are more likely to yield better results.
 
-## License:
-MIT License
