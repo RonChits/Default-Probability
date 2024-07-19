@@ -101,6 +101,19 @@ Problem statement: Financial institutions face significant risks due to loan def
   - F1_Score.
   - Precission.
   - Accuracy(though not a basis to perfomance).
+## Assumptions.
+1. **Data Quality**:
+- Data is accurate, complete, and consistent without significant errors or missing values.
+- Data is representative of the target population.
+- Features are relevant to the prediction of loan default.
+2. **Stationarity**:
+- The underlying patterns and relationships in the data remain relatively stable over time.
+3. **Independence**:
+- Observations in the dataset are independent of each other.
+4. **Normality**:
+- Assumption is relaxed here.
+5. **Feature Scaling**:
+- Features are on a comparable scale to avoid bias in model performance, done by StandardScaler.
 
 # Results:
 * XGBoost	achieved ROC AUC :0.859028, Accuracy: 0.923000, Precision:	0.902585 and F1_Score:	0.894066.
@@ -121,11 +134,13 @@ Problem statement: Financial institutions face significant risks due to loan def
 
 ## Limitations and Future Work.
 - Limitations
-  **Computational resources**: Models from observations made they only need strong Computers and resource maximisation techniques these improving overall perfomance.
+  
+  **1. Computational resources**: Models from observations made they only need strong Computers and resource maximisation techniques these improving overall perfomance.
 - Future Work.
-**Use of Ensemble Methods**: combining our XGBoost model with other well-performing models using ensemble techniques like stacking or bagging. With the above presentation, future work will  combine models to yield their strengths.
-
-**Bayesian Optimization**:Bayesian optimization techniques, like Hyperopt or Optuna, intelligently explore the hyperparameter space, focusing on areas that are more likely to yield better results.
+  
+  **1. Use of Ensemble Methods**: combining our XGBoost model with other well-performing models using ensemble techniques like stacking or bagging. With the above presentation, future work will  combine models to yield their strengths.
+  
+  **2. Bayesian Optimization**:Bayesian optimization techniques, like Hyperopt or Optuna, intelligently explore the hyperparameter space, focusing on areas that are more likely to yield better results.
 
 ## License:
 MIT License
